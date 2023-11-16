@@ -25,6 +25,13 @@ export default function RootLayout({ children }) {
     <UserContext.Provider value={{userdetails,addUser,handleDarkTheme}}>
     <html lang="en">
       <title>User Dashboard</title>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="author" content="Abhishek Sevarik"/>
+      <meta name="description" content="Author: Abhishek Sevarik,
+        length:2 pages
+      "/>
+
       <body data-theme={isDarkTheme}>
        <DarkThemeSwitch/>
         {children}</body>

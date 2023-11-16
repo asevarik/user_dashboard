@@ -8,11 +8,12 @@ const DarkThemeSwitch = () => {
     const {isDarkTheme,handleDarkTheme} = React.useContext(UserContext)
   return (
     <div className='absolute top-9 right-20 z-50'>
-    <div className='flex gap-3'>
+    <label className='flex gap-3'>
+    Theme
     <Moon/>
     <input type="checkbox" value={isDarkTheme===DARK} className="toggle toggle-md hover:cursor-pointer" onClick={handleDarkTheme}/>
     <Sun/>
-    </div>
+    </label>
     </div>
   )
 }
